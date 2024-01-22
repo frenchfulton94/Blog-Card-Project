@@ -36,7 +36,8 @@
   --corner-radius-large: 20px;
   --corner-radius-medium: 10px;
   --corner-radius-small: 4px;
-  --box-shadow-length: clamp(8px, -2.7895rem + 14.0351vw, 16px);
+  --box-shadow-length: 8px;
+  --box-shadow-length-hover: 16px;
 }
 
 body {
@@ -63,10 +64,16 @@ main {
   font-family: "Figtree";
   line-height: var(--font-line-height);
   color: var(--black);
-  box-shadow: var(--box-shadow-length) var(--box-shadow-length) 0px 0px #000;
+  box-shadow: var(--box-shadow-length) var(--box-shadow-length) 0px 0px var(--black);
   max-width: 384px;
   min-width: 327px;
   border: solid black 1px;
+}
+
+.blog_card:hover,
+.blog_card:focus {
+    box-shadow: var(--box-shadow-length-hover) var(--box-shadow-length-hover) 0px 0px var(--black);
+    cursor: pointer;
 }
 
 .blog_card_cover {
@@ -94,9 +101,9 @@ main {
   margin: 0px;
 }
 
-.blog_card_header_title a:hover, .blog_card_header_title a:focus {
+.blog_card:hover .blog_card_header_title,
+.blog_card:focus .blog_card_header_title {
   color: var(--yellow);
-  cursor: pointer;
 }
 
 .blog_card_header_published {
