@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="preload"
+      type="font/tff"
+      as="font"
+      href="./assets/fonts/Figtree-VariableFont_wght.ttf"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @font-face {
+        font-family: "Figtree";
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="blog_card">
+        <img
+          class="blog_card_cover"
+          src="./assets/images/illustration-article.svg"
+          alt="Blog card cover image."
+        />
+        <div class="blog_card_content">
+          <header class="blog_card_header">
+            <p class="blog_card_header_topic">Learning</p>
+            <p class="blog_card_header_published">
+              Published <time>21 Dec 2023</time>
+            </p>
+            <h1 class="blog_card_header_title">HTML & CSS foundations</h1>
+          </header>
+          <p class="blog_card_summary">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <footer class="blog_card_footer">
+          <img
+            class="blog_card_author_image"
+            src="./assets/images/image-avatar.webp"
+            alt="Author image."
+          />
+          <p class="blog_card_author">Greg Hooper</p>
+        </footer>
+      </article>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
