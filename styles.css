@@ -94,7 +94,7 @@ main {
   margin: 0px;
 }
 
-.blog_card_header_title:hover {
+.blog_card_header_title a:hover, .blog_card_header_title a:focus {
   color: var(--yellow);
   cursor: pointer;
 }
